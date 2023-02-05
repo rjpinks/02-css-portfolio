@@ -7,51 +7,58 @@
     <title>Ryan Pinkston</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
     <header>
         <h1>Ryan Pinkston</h1>
     </header>
-    <nav>
-        <ul>
-            <li>About Me</li>
-            <!--the link/image to the appropriate section will go here-->
     
-            <li>section2</li>
-            <!--the link/image to the appropriate section will go here-->
-    
-            <li>section3</li>
-            <!--the link/image to the appropriate section will go here-->
-    
-            <li>section4</li>
-            <!--the link/image to the appropriate section will go here-->
-        </ul>
+    <nav> <!--Links to different sections of page-->
+        <a class="nav-link" href="#About Me">About Me</a>
+        <a class="nav-link" href="#section2">section2</a>
+        <a class="nav-link" href="#section3">section3</a>
+        <a class="nav-link" href="#section4">section4</a>
     </nav>
-    <section class="cards-top">
-        <h2>About Me</h2>
-        <p>I'm a graduate from the University of Illinois at Urbana Champaign.</p>
-        <p>I studied History with a minor in French.</p>
-        <p>I'm a veteran, and I've worked in steel industry. However, I also worked as an assistant teacher.</p>
-        <a href="https://docs.google.com/document/d/1iroX3OpC4spxV9sZ5_qDabxwJ3tjlJT_HQs22lprQQ0/edit">
-            <p>Check out my resume.</p>
-        </a>
-        <img src="./assets/images/Headshot.jpeg" alt="Handsome young man in tie" width="300" height="400">
+    
+    <section class="card-container"> <!--nesting sections (info about me) and putting in 2 classes for flexbox-->
+        
+        <!--these cards will stack on the top in a traditional screen size (note class)-->
+        <subsection class="cards-top" id="About Me">
+            <h2>About Me</h2>
+            <p>I'm a graduate from the University of Illinois at Urbana Champaign.</p>
+            <p>I studied History with a minor in French.</p>
+            <p>I'm a veteran, and I've worked in steel industry. However, I also worked as an assistant teacher.</p>
+            <a href="https://docs.google.com/document/d/1iroX3OpC4spxV9sZ5_qDabxwJ3tjlJT_HQs22lprQQ0/edit">
+                <p>Check out my resume.</p>
+            </a>
+            <img src="./assets/images/Headshot.jpeg" alt="Handsome young man in tie" width="300" height="400">
+        </subsection>
+        <subsection class="cards-top" id="section2">
+            <h2>Section Title</h2>
+            <p>Section Information</p>
+            <p>Section Information</p>
+            <p>Section Information</p>
+            <img src="https://via.placeholder.com/200" alt="200x200 Placeholder Image" width="200" height="200">
+        </subsection>
+        
+        <!--these cards will stack on the bottom in a traditional screen size (note class)-->
+        <subsection class="cards-bottom" id="section3">
+            <h2>Section Title</h2>
+            <p>Section Information</p>
+            <p>Section Information</p>
+            <p>Section Information</p>
+            <img src="https://via.placeholder.com/200" alt="200x200 Placeholder Image" width="200" height="200">
+        </subsection>
+        <subsection class="cards-bottom" id="section4">
+            <h2>Section Title</h2>
+            <p>Section Information</p>
+            <p>Section Information</p>
+            <p>Section Information</p>
+            <img src="https://via.placeholder.com/200" alt="200x200 Placeholder Image" width="200" height="200">
+        </subsection>
     </section>
-    <section class="cards-top">
-        <h2>Section Title</h2>
-        <p>Section Information</p>
-        <!--image will go here-->
-    </section>
-    <section class="cards-bottom">
-        <h2>Section Title</h2>
-        <p>Section Information</p>
-        <!--image will go here-->
-    </section>
-    <section class="cards-bottom">
-        <h2>Section Title</h2>
-        <p>Section Information</p>
-        <!--image will go here-->
-    </section>
-    <footer>
+    
+    <footer> <!--footer seems like a good choice for contact info-->
         <h3>Contact Information</h3>
         <ul>
             <li>Email: pinksryan54@gmail.com</li>
