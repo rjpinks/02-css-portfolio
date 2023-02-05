@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Pinkston</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ryan Pinkston</h1>
+    </header>
+    
+    <nav> <!--Links to different sections of page-->
+        <a class="nav-link" href="#About Me">About Me</a>
+        <a class="nav-link" href="#section2">section2</a>
+        <a class="nav-link" href="#section3">section3</a>
+        <a class="nav-link" href="#section4">section4</a>
+    </nav>
+    
+    <section class="card-container"> <!--nesting sections (info about me) and putting in 2 classes for flexbox-->
+        
+        <!--these cards will stack on the top in a traditional screen size (note class)-->
+        <subsection class="cards-top" id="About Me">
+            <h2>About Me</h2>
+            <p>I'm a graduate from the University of Illinois at Urbana Champaign.</p>
+            <p>I studied History with a minor in French.</p>
+            <p>I'm a veteran, and I've worked in steel industry. However, I also worked as an assistant teacher.</p>
+            <a href="https://docs.google.com/document/d/1iroX3OpC4spxV9sZ5_qDabxwJ3tjlJT_HQs22lprQQ0/edit">
+                <p>Check out my resume.</p>
+            </a>
+            <img src="./assets/images/Headshot.jpeg" alt="Handsome young man in tie" width="300" height="400">
+        </subsection>
+        <subsection class="cards-top" id="section2">
+            <h2>Section Title</h2>
+            <p>Section Information</p>
+            <p>Section Information</p>
+            <p>Section Information</p>
+            <img src="https://via.placeholder.com/200" alt="200x200 Placeholder Image" width="200" height="200">
+        </subsection>
+        
+        <!--these cards will stack on the bottom in a traditional screen size (note class)-->
+        <subsection class="cards-bottom" id="section3">
+            <h2>Section Title</h2>
+            <p>Section Information</p>
+            <p>Section Information</p>
+            <p>Section Information</p>
+            <img src="https://via.placeholder.com/200" alt="200x200 Placeholder Image" width="200" height="200">
+        </subsection>
+        <subsection class="cards-bottom" id="section4">
+            <h2>Section Title</h2>
+            <p>Section Information</p>
+            <p>Section Information</p>
+            <p>Section Information</p>
+            <img src="https://via.placeholder.com/200" alt="200x200 Placeholder Image" width="200" height="200">
+        </subsection>
+    </section>
+    
+    <footer> <!--footer seems like a good choice for contact info-->
+        <h3>Contact Information</h3>
+        <ul>
+            <li>Email: pinksryan54@gmail.com</li>
+            <li>Phone Number: (815) 564 7885</li>
+        </ul>
+    </footer>
+</body>
+</html>
