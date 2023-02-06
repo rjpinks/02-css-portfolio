@@ -93,4 +93,30 @@ footer {
     padding-bottom: 1px;
 }
 
-/**I will put media queries here at the end I think**/
+/**The media query is for small screens**/
+
+@media screen and (max-width: 787px) {
+    h1{
+        background-color: black;
+        color: white;
+        margin: auto;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        background-color: black;
+        color: white;
+    }
+    .cards-top {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cards-bottom {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
