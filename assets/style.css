@@ -93,7 +93,7 @@ footer {
     padding-bottom: 1px;
 }
 
-/**The media query is for small screens**/
+/**The media query is for small screens (more block display)**/
 
 @media screen and (max-width: 787px) {
     h1{
